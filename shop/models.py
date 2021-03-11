@@ -12,7 +12,7 @@ class Customer(Model):
 
 
 class Product(Model):
-    title = CharField(max_length=50)
+    title = CharField(max_length=50, null=True)
     price = DecimalField(decimal_places=2, max_digits=10)
     description = TextField()
     image = ImageField(name='painting_image')
@@ -33,9 +33,9 @@ class Cart(Model):
     quantity = IntegerField()
 
 
-class Orders(Model):
+class Order(Model):
     customer = ManyToManyField(Customer)
     cart = ManyToManyField(Cart)
     created = DateTimeField(auto_now_add=True)
-
+    transaction_id = CharField(max_length=50, null = True)
 
