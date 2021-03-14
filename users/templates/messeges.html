@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<table class="striped">
+    <thead>
+    <tr>
+        <th> Name</th>
+        <th> Surname</th>
+        <th> Email</th>
+        <th> Text</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for msg in messages %}
+    <tr>
+        <td>{{msg.first_name}}</td>
+        <td>{{msg.last_name}}</td>
+        <td>{{msg.email}}</td>
+        <td>{{msg.text}}</td>
+    </tr>
+
+    {% endfor %}
+    </tbody>
+
+</table>
+
+{% endblock %}

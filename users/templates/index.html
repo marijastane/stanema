@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>stanema.ART</title>
+            <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+
+<body class = "black">
+    <header>
+        <div class="container">
+            <nav class = "#424242 grey darken-3">
+                <div class="container">
+        <!--Brand-->
+                    <a href="#" class="brand-logo">stanema.ART</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/Shop">Shop</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/orders">Orders</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+        <body>
+            <div>
+               <img class="responsive-img" src="C:\Python\My_project\media\Painting1.jpg" width="800" height="800">
+            </div>
+        </body>
+</body>
+
+</html>
+{% endblock %}
